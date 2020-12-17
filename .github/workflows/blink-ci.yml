@@ -22,5 +22,5 @@ jobs:
       run: |
         arduino-cli board listall
         arduino-cli core update-index
-        cd Blink
-        make
+        cd /
+        find | grep g++
