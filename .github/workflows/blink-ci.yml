@@ -20,5 +20,6 @@ jobs:
         make install-deps
     - name: Build Blink
       run: |
+        make install-deps
         cd Blink
         make
