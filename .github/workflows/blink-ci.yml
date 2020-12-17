@@ -9,7 +9,8 @@ on:
 jobs:
   build:
 
-    runs-on: acrandal/arduino-cli:latest
+    runs-on: ubuntu-latest
+    container: acrandal/arduino-cli:latest
 
     steps:
     - uses: actions/checkout@v2
