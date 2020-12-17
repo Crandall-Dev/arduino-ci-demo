@@ -14,8 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: build
+    - name: Install Dependencies
       run: |
         apk add make
+        make install-deps
+    - name: Build Blink
+      run: |
         cd Blink
         make
