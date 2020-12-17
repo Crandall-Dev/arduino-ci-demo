@@ -16,5 +16,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: build
       run: |
+        apk install make
         cd Blink
         make
