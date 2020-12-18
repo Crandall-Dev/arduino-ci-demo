@@ -22,9 +22,5 @@ jobs:
       run: |
         arduino-cli board listall
         arduino-cli core update-index
-        pushd .
-        cd /
-        find | grep g++
-        popd
         cd Blink
         make
